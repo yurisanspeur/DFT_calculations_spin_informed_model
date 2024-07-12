@@ -1,0 +1,249 @@
+ vasp.6.3.2 27Jun22 (build Jul  3 2023 11:46:21) complex                         
+ executed on    LinuxNV_CrayMPICH date 2024.04.21  22:58:02
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on NCORE=   1 cores,    4 groups
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ INCAR:
+   ALGO = Fast
+   EDIFF = 0.0014
+   EFIELD_PEAD = 0.0 0.0 0.0
+   ENCUT = 520.0
+   IBRION = 2
+   ICHARG = 1
+   ISIF = 3
+   ISMEAR = 0
+   ISPIN = 2
+   ISTART = 1
+   ISYM = 0
+   LCALCEPS = False
+   LCALCPOL = False
+   LEFG = False
+   LORBIT = 11
+   LPEAD = False
+   LREAL = Auto
+   LWAVE = False
+   MAGMOM = 2*7.0 26*0.6
+   NELM = 1000
+   NSW = 99
+   PREC = accurate
+   SIGMA = 0.2
+
+ POTCAR:    PAW_PBE Eu 23Dec2003                  
+ POTCAR:    PAW_PBE Zn 06Sep2000                  
+ POTCAR:    PAW_PBE Eu 23Dec2003                  
+   SHA256 =  ed303d27e7c5191953f9b15539336e6f36d9037c1d2e92e80c13d733697cb93d Eu/POTCAR             
+   COPYR  = (c) Copyright 23Dec2003 Georg Kresse                                                    
+   COPYR  = This file is part of the software VASP. Any use, copying, and all other rights are regul
+   COPYR  = If you do not have a valid VASP license, you may not use, copy or distribute this file. 
+   VRHFIN =Eu : [core=Kr4d]                                                                         
+   LEXCH  = PE                                                                                      
+   EATOM  =  2619.8085 eV,  192.5505 Ry                                                             
+                                                                                                    
+   TITEL  = PAW_PBE Eu 23Dec2003                                                                    
+   LULTRA =        F    use ultrasoft PP ?                                                          
+   IUNSCR =        1    unscreen: 0-lin 1-nonlin 2-no                                               
+   RPACOR =    2.300    partial core radius                                                         
+   POMASS =  151.965; ZVAL   =   17.000    mass and valenz                                          
+   RCORE  =    2.800    outmost cutoff radius                                                       
+   RWIGS  =    2.800; RWIGS  =    1.482    wigner-seitz radius (au A)                               
+   ENMAX  =  249.668; ENMIN  =  187.251 eV                                                          
+   RCLOC  =    2.308    cutoff for local pot                                                        
+   LCOR   =        T    correct aug charges                                                         
+   LPAW   =        T    paw PP                                                                      
+   EAUG   =  549.628                                                                                
+   DEXC   =    0.000                                                                                
+   RMAX   =    2.870    core radius for proj-oper                                                   
+   RAUG   =    1.300    factor for augmentation sphere                                              
+   RDEP   =    2.887    radius for radial grids                                                     
+   RDEPT  =    2.221    core radius for aug-charge                                                  
+                                                                                                    
+   Atomic configuration                                                                             
+   14 entries                                                                                       
+     n  l   j            E        occ.                                                              
+     1  0  0.50    -48354.7667   2.0000                                                             
+     2  0  0.50     -7939.6472   2.0000                                                             
+     2  1  1.50     -7072.6637   6.0000                                                             
+     3  0  0.50     -1747.1875   2.0000                                                             
+     3  1  1.50     -1477.5221   6.0000                                                             
+     3  2  2.50     -1117.4686  10.0000                                                             
+     4  0  0.50      -346.8682   2.0000                                                             
+     4  1  1.50      -258.1962   6.0000                                                             
+     4  2  2.50      -134.7724  10.0000                                                             
+     5  0  0.50       -44.6510   2.0000                                                             
+     6  0  0.50        -3.6227   2.0000                                                             
+     5  1  1.50       -23.7639   6.0000                                                             
+     5  2  2.50        -1.3130   0.0000                                                             
+     4  3  2.50        -2.7310   7.0000                                                             
+   Description                                                                                      
+     l       E           TYP  RCUT    TYP  RCUT                                                     
+     0    -44.6510453     23  2.400                                                                 
+     0     -3.6226685     23  2.400                                                                 
+     1    -23.7638687     23  2.400                                                                 
+     1     27.2116520     23  2.400                                                                 
+     2     -1.3129622     23  2.500                                                                 
+     2     13.6058260     23  2.500                                                                 
+     3     -2.7309948     23  2.800                                                                 
+     3     -3.4014565     23  2.800                                                                 
+  local pseudopotential read in
+  partial core-charges read in
+  partial kinetic energy density read in
+  atomic valenz-charges read in
+  non local Contribution for L=            0  read in
+    real space projection operators read in
+  non local Contribution for L=            0  read in
+    real space projection operators read in
+  non local Contribution for L=            1  read in
+    real space projection operators read in
+  non local Contribution for L=            1  read in
+    real space projection operators read in
+  non local Contribution for L=            2  read in
+    real space projection operators read in
+  non local Contribution for L=            2  read in
+    real space projection operators read in
+  non local Contribution for L=            3  read in
+    real space projection operators read in
+  non local Contribution for L=            3  read in
+    real space projection operators read in
+    PAW grid and wavefunctions read in
+ 
+   number of l-projection  operators is LMAX  =            8
+   number of lm-projection operators is LMMAX =           32
+ 
+ POTCAR:    PAW_PBE Zn 06Sep2000                  
+   SHA256 =  501fddbd8274dd8e9725d4f3de27861d7f1e553a7e18441bc79fed8f346e7f23 Zn/POTCAR             
+   COPYR  = (c) Copyright 06Sep2000 Georg Kresse                                                    
+   COPYR  = This file is part of the software VASP. Any use, copying, and all other rights are regul
+   COPYR  = If you do not have a valid VASP license, you may not use, copy or distribute this file. 
+   VRHFIN =Zn: d10 p2                                                                               
+   LEXCH  = PE                                                                                      
+   EATOM  =  1748.8345 eV,  128.5357 Ry                                                             
+                                                                                                    
+   TITEL  = PAW_PBE Zn 06Sep2000                                                                    
+   LULTRA =        F    use ultrasoft PP ?                                                          
+   IUNSCR =        1    unscreen: 0-lin 1-nonlin 2-no                                               
+   RPACOR =    2.000    partial core radius                                                         
+   POMASS =   65.390; ZVAL   =   12.000    mass and valenz                                          
+   RCORE  =    2.300    outmost cutoff radius                                                       
+   RWIGS  =    2.400; RWIGS  =    1.270    wigner-seitz radius (au A)                               
+   ENMAX  =  276.723; ENMIN  =  207.542 eV                                                          
+   RCLOC  =    1.828    cutoff for local pot                                                        
+   LCOR   =        T    correct aug charges                                                         
+   LPAW   =        T    paw PP                                                                      
+   EAUG   =  575.892                                                                                
+   DEXC   =    0.000                                                                                
+   RMAX   =    2.347    core radius for proj-oper                                                   
+   RAUG   =    1.300    factor for augmentation sphere                                              
+   RDEP   =    2.324    radius for radial grids                                                     
+   RDEPT  =    1.788    core radius for aug-charge                                                  
+                                                                                                    
+   Atomic configuration                                                                             
+    9 entries                                                                                       
+     n  l   j            E        occ.                                                              
+     1  0  0.50     -9524.6913   2.0000                                                             
+     2  0  0.50     -1158.1882   2.0000                                                             
+     2  1  1.50     -1003.8506   6.0000                                                             
+     3  0  0.50      -129.2194   2.0000                                                             
+     3  1  1.50       -83.3890   6.0000                                                             
+     3  2  2.50       -10.1410  10.0000                                                             
+     4  0  0.50        -5.9785   2.0000                                                             
+     4  1  0.50        -4.0817   0.0000                                                             
+     4  3  2.50        -1.3606   0.0000                                                             
+   Description                                                                                      
+     l       E           TYP  RCUT    TYP  RCUT                                                     
+     2    -10.1410010     23  2.300                                                                 
+     2    -11.5015836     23  2.300                                                                 
+     0     -5.9785163     23  2.300                                                                 
+     0      1.1858015     23  2.300                                                                 
+     1     -2.7211652     23  2.300                                                                 
+     1     13.2444212     23  2.300                                                                 
+  local pseudopotential read in
+  partial core-charges read in
+  partial kinetic energy density read in
+  atomic valenz-charges read in
+  non local Contribution for L=            2  read in
+    real space projection operators read in
+  non local Contribution for L=            2  read in
+    real space projection operators read in
+  non local Contribution for L=            0  read in
+    real space projection operators read in
+  non local Contribution for L=            0  read in
+    real space projection operators read in
+  non local Contribution for L=            1  read in
+    real space projection operators read in
+  non local Contribution for L=            1  read in
+    real space projection operators read in
+    PAW grid and wavefunctions read in
+ 
+   number of l-projection  operators is LMAX  =            6
+   number of lm-projection operators is LMMAX =           18
+ 
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 13.42
+ optimisation between [QCUT,QGAM] = [ 11.67, 23.35] = [ 38.16,152.62] Ry 
+ Optimized for a Real-space Cutoff    1.63 Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   0     11    11.673    10.400    0.14E-04    0.18E-05    0.24E-07
+   0     11    11.673    10.768    0.21E-04    0.32E-05    0.49E-07
+   1     11    11.673     4.094    0.40E-05    0.13E-04    0.93E-07
+   1     11    11.673     4.009    0.11E-04    0.46E-04    0.33E-06
+   2     10    11.673    29.030    0.79E-04    0.60E-04    0.70E-06
+   2     10    11.673    19.941    0.80E-04    0.60E-04    0.71E-06
+   3     10    11.673    88.889    0.23E-03    0.29E-03    0.30E-06
+   3     10    11.673    76.102    0.23E-03    0.30E-03    0.30E-06
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 16.25
+ optimisation between [QCUT,QGAM] = [ 11.54, 23.24] = [ 37.28,151.24] Ry 
+ Optimized for a Real-space Cutoff    1.49 Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   2      9    11.539    46.356    0.17E-03    0.92E-04    0.19E-06
+   2      9    11.539    41.843    0.18E-03    0.96E-04    0.20E-06
+   0     10    11.539    48.958    0.57E-04    0.27E-04    0.28E-06
+   0     10    11.539    32.776    0.51E-04    0.25E-04    0.27E-06
+   1     10    11.539    17.787    0.55E-04    0.96E-04    0.11E-06
+   1     10    11.539    14.435    0.48E-04    0.86E-04    0.10E-06
+  PAW_PBE Eu 23Dec2003                  :
+ energy of atom  1       EATOM=-2619.8085
+ kinetic energy error for atom=    0.0015 (will be added to EATOM!!)
+  PAW_PBE Zn 06Sep2000                  :
+ energy of atom  2       EATOM=-1748.8345
+ kinetic energy error for atom=    0.0029 (will be added to EATOM!!)
+ 
+ 
+ POSCAR: Eu2 Zn26
+ -----------------------------------------------------------------------------
+|                                                                             |
+|     EEEEEEE  RRRRRR   RRRRRR   OOOOOOO  RRRRRR      ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     E        R     R  R     R  O     O  R     R     ###     ###     ###     |
+|     EEEEE    RRRRRR   RRRRRR   O     O  RRRRRR       #       #       #      |
+|     E        R   R    R   R    O     O  R   R                               |
+|     E        R    R   R    R   O     O  R    R      ###     ###     ###     |
+|     EEEEEEE  R     R  R     R  OOOOOOO  R     R     ###     ###     ###     |
+|                                                                             |
+|     Inconsistent Bravais lattice types found for crystalline and            |
+|     reciprocal lattice:                                                     |
+|                                                                             |
+|        Crystalline: triclinic                                               |
+|        Reciprocal : base-centered monoclinic                                |
+|                    (instead of triclinic)                                   |
+|                                                                             |
+|     In most cases this is due to inaccuracies in the specification of       |
+|     the crytalline lattice vectors.                                         |
+|                                                                             |
+|     Suggested SOLUTIONS:                                                    |
+|      ) Refine the lattice parameters of your structure,                     |
+|      ) and/or try changing SYMPREC.                                         |
+|                                                                             |
+|       ---->  I REFUSE TO CONTINUE WITH THIS SICK JOB ... BYE!!! <----       |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
